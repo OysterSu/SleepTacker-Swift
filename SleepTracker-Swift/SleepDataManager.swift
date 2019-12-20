@@ -12,11 +12,13 @@ import CoreData
 class SleepDataManager {
     var moc: NSManagedObjectContext!
     
+    typealias callbackClosure = (Result<(), Error>) -> Void
+    
     init(moc: NSManagedObjectContext) {
         self.moc = moc
     }
 
-    func insert(entityName: String, attributeInfo: [String: Any], callback: @escaping (Result<(), Error>) -> Void) {
+    func insert(entityName: String, attributeInfo: [String: Any], callback: @escaping callbackClosure) {
         let insertData = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.moc) as! SleepData
 
         for (key, value) in attributeInfo {
@@ -38,7 +40,7 @@ class SleepDataManager {
         callback(Result { try self.moc.fetch(request) })
     }
     
-    func update(entityName: String, predicate: NSPredicate, attibute: [String: Any], callback: @escaping (Result<(), Error>) -> Void) {
+    func update(entityName: String, predicate: NSPredicate, attibute: [String: Any], callback: @escaping callbackClosure) {
         self.fetch(entityName: entityName, predicate: predicate) { (fetchResult: Result<[SleepData], Error>) in
             switch fetchResult {
             case .success(let sleepDatas):
