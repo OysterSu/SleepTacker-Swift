@@ -28,7 +28,7 @@ class SleepDataManager {
     
     func fetch(entityName: String,
                predicate: NSPredicate,
-               sortDescriptor: [NSSortDescriptor],
+               sortDescriptor: [NSSortDescriptor]? = nil,
                callback: @escaping (Result<[SleepData], Error>) -> Void) {
         
         let request = NSFetchRequest<SleepData>(entityName: entityName)
