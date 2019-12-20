@@ -54,4 +54,19 @@ class SleepDataManager {
             }
         }
     }
+    
+    func delete(entityName: String, predicate: NSPredicate, callback: @escaping callbackClosure) {
+        self.fetch(entityName: entityName, predicate: predicate) { (fetchResult: Result<[SleepData], Error>) in
+            switch fetchResult {
+            case .success(let sleepDatas):
+                for sleepData in sleepDatas {
+                    self.moc.delete(sleepData)
+                }
+                
+                callback(Result{ try self.moc.save() })
+            case .failure(let error):
+                callback(.failure(error))
+            }
+        }
+    }
 }
