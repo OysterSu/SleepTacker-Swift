@@ -18,6 +18,7 @@
 		65061E21239E4D71005CCAA7 /* SleepTracker_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E20239E4D71005CCAA7 /* SleepTracker_SwiftTests.swift */; };
 		65061E2C239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E2B239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift */; };
 		65E6B84723ACC3C00060F7D8 /* SleepType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6B84623ACC3C00060F7D8 /* SleepType.swift */; };
+		65E6B84A23ACC62C0060F7D8 /* SleepDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6B84923ACC62C0060F7D8 /* SleepDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		65061E2B239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTracker_SwiftUITests.swift; sourceTree = "<group>"; };
 		65061E2D239E4D71005CCAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65E6B84623ACC3C00060F7D8 /* SleepType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepType.swift; sourceTree = "<group>"; };
+		65E6B84923ACC62C0060F7D8 /* SleepDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				65061E0F239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld */,
+				65E6B84923ACC62C0060F7D8 /* SleepDataManager.swift */,
 				65E6B84623ACC3C00060F7D8 /* SleepType.swift */,
 			);
 			name = CoreData;
@@ -278,6 +281,7 @@
 			files = (
 				65061E0B239E4D6F005CCAA7 /* SecondViewController.swift in Sources */,
 				65061E09239E4D6F005CCAA7 /* FirstViewController.swift in Sources */,
+				65E6B84A23ACC62C0060F7D8 /* SleepDataManager.swift in Sources */,
 				65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */,
 				65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */,
 				65061E07239E4D6F005CCAA7 /* SceneDelegate.swift in Sources */,
