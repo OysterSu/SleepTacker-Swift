@@ -113,8 +113,7 @@
 				65061E12239E4D71005CCAA7 /* Assets.xcassets */,
 				65061E14239E4D71005CCAA7 /* LaunchScreen.storyboard */,
 				65061E17239E4D71005CCAA7 /* Info.plist */,
-				65061E0F239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld */,
-				65E6B84623ACC3C00060F7D8 /* SleepType.swift */,
+				65E6B84823ACC4AD0060F7D8 /* CoreData */,
 			);
 			path = "SleepTracker-Swift";
 			sourceTree = "<group>";
@@ -135,6 +134,15 @@
 				65061E2D239E4D71005CCAA7 /* Info.plist */,
 			);
 			path = "SleepTracker-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		65E6B84823ACC4AD0060F7D8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				65061E0F239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld */,
+				65E6B84623ACC3C00060F7D8 /* SleepType.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
