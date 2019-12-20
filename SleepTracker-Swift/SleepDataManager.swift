@@ -11,14 +11,13 @@ import CoreData
 
 class SleepDataManager {
     var moc: NSManagedObjectContext!
-    typealias MyType = SleepData
-
+    
     init(moc: NSManagedObjectContext) {
         self.moc = moc
     }
 
     func insert(entityName: String, attributeInfo: [String: Any], callback: @escaping (Result<(), Error>) -> Void) {
-        let insertData = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.moc) as! MyType
+        let insertData = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.moc) as! SleepData
 
         for (key, value) in attributeInfo {
             insertData.setValue(value, forKey: key)
