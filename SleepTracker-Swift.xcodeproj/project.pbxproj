@@ -17,6 +17,7 @@
 		65061E16239E4D71005CCAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65061E14239E4D71005CCAA7 /* LaunchScreen.storyboard */; };
 		65061E21239E4D71005CCAA7 /* SleepTracker_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E20239E4D71005CCAA7 /* SleepTracker_SwiftTests.swift */; };
 		65061E2C239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E2B239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift */; };
+		65E6B84723ACC3C00060F7D8 /* SleepType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6B84623ACC3C00060F7D8 /* SleepType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		65061E27239E4D71005CCAA7 /* SleepTracker-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SleepTracker-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65061E2B239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTracker_SwiftUITests.swift; sourceTree = "<group>"; };
 		65061E2D239E4D71005CCAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E6B84623ACC3C00060F7D8 /* SleepType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				65061E14239E4D71005CCAA7 /* LaunchScreen.storyboard */,
 				65061E17239E4D71005CCAA7 /* Info.plist */,
 				65061E0F239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld */,
+				65E6B84623ACC3C00060F7D8 /* SleepType.swift */,
 			);
 			path = "SleepTracker-Swift";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */,
 				65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */,
 				65061E07239E4D6F005CCAA7 /* SceneDelegate.swift in Sources */,
+				65E6B84723ACC3C00060F7D8 /* SleepType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
