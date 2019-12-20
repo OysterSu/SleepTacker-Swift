@@ -38,4 +38,21 @@ class SleepDataManager {
         
         callback(Result { try self.moc.fetch(request) })
     }
+    
+    func update(entityName: String, predicate: NSPredicate, attibute: [String: Any], callback: @escaping (Result<(), Error>) -> Void) {
+        self.fetch(entityName: entityName, predicate: predicate) { (fetchResult: Result<[SleepData], Error>) in
+            switch fetchResult {
+            case .success(let sleepDatas):
+                for sleepData in sleepDatas {
+                    for (key, value) in attibute {
+                        sleepData.setValue(value, forKey: key)
+                    }
+                }
+                
+                callback(Result{ try self.moc.save() })
+            case .failure(let error):
+                callback(.failure(error))
+            }
+        }
+    }
 }
