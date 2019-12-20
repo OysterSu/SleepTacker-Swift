@@ -26,4 +26,16 @@ class SleepDataManager {
         
         callback(Result{ try moc.save() })
     }
+    
+    func fetch(entityName: String,
+               predicate: NSPredicate,
+               sortDescriptor: [NSSortDescriptor],
+               callback: @escaping (Result<[SleepData], Error>) -> Void) {
+        
+        let request = NSFetchRequest<SleepData>(entityName: entityName)
+        request.predicate = predicate
+        request.sortDescriptors = sortDescriptor
+        
+        callback(Result { try self.moc.fetch(request) })
+    }
 }
