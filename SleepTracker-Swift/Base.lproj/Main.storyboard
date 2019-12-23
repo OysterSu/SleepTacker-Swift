@@ -10,7 +10,7 @@
         <scene sceneID="hGB-hb-QzE">
             <objects>
                 <viewControllerPlaceholder storyboardName="Record" id="GqF-L2-2qM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="紀錄" id="6H1-1f-YLP"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="6H1-1f-YLP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6pa-ga-4cd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -20,7 +20,7 @@
         <scene sceneID="y4R-1P-Xm8">
             <objects>
                 <viewControllerPlaceholder storyboardName="History" id="3t7-bw-Cvc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="歷史" id="Co2-JK-xHW"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Co2-JK-xHW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDS-qX-a6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,7 +30,7 @@
         <scene sceneID="mg8-RP-j6h">
             <objects>
                 <viewControllerPlaceholder storyboardName="Analytics" id="KDl-oZ-rTf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="分析" id="kVH-Af-VBW"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="kVH-Af-VBW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hay-fY-2GX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,7 +40,7 @@
         <scene sceneID="Wmd-Bb-JAe">
             <objects>
                 <viewControllerPlaceholder storyboardName="Setting" id="6ZD-dN-eb3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="設定" id="DOX-4B-nHo"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="DOX-4B-nHo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsF-gR-V2A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
