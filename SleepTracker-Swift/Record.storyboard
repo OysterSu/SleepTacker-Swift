@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="上床"/>
                                 <connections>
-                                    <segue destination="14P-jG-qmB" kind="presentation" id="u3W-eV-8BQ"/>
+                                    <segue destination="14P-jG-qmB" kind="showDetail" id="TU5-n0-MIu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,18 +32,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iy9-rW-VpM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="40"/>
+            <point key="canvasLocation" x="-107.24637681159422" y="39.508928571428569"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="psR-NV-Eae">
             <objects>
-                <tableViewController id="IUd-7t-xac" sceneMemberID="viewController">
+                <tableViewController id="IUd-7t-xac" customClass="RecordMainTableViewController" customModule="SleepTracker_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="uOp-xm-2mR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AvJ-j8-eV5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="AvJ-j8-eV5">
                                 <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AvJ-j8-eV5" id="UBQ-Sx-VtL">
@@ -58,8 +58,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="vkD-W5-crl">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="V84-cz-0J6"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Mb3-Lx-bZD"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="V84-cz-0J6">
+                            <connections>
+                                <action selector="cancel:" destination="IUd-7t-xac" id="NJl-Bh-TAd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Mb3-Lx-bZD">
+                            <connections>
+                                <action selector="save:" destination="IUd-7t-xac" id="vMp-qg-lK8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOz-mC-Zoj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

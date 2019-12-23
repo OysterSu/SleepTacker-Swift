@@ -23,6 +23,7 @@
 		65E6B84E23B0B4900060F7D8 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E6B84D23B0B4900060F7D8 /* History.storyboard */; };
 		65E6B85023B0B4A20060F7D8 /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E6B84F23B0B4A20060F7D8 /* Analytics.storyboard */; };
 		65E6B85223B0B4AB0060F7D8 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E6B85123B0B4AB0060F7D8 /* Setting.storyboard */; };
+		65E6B85723B0BF6B0060F7D8 /* RecordMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6B85623B0BF6B0060F7D8 /* RecordMainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		65E6B84D23B0B4900060F7D8 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		65E6B84F23B0B4A20060F7D8 /* Analytics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
 		65E6B85123B0B4AB0060F7D8 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		65E6B85623B0BF6B0060F7D8 /* RecordMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,7 @@
 				65061E08239E4D6F005CCAA7 /* FirstViewController.swift */,
 				65061E0A239E4D6F005CCAA7 /* SecondViewController.swift */,
 				65061E0C239E4D6F005CCAA7 /* Main.storyboard */,
-				65E6B84B23B0B4830060F7D8 /* Record.storyboard */,
+				65E6B85523B0BED90060F7D8 /* Record */,
 				65E6B84D23B0B4900060F7D8 /* History.storyboard */,
 				65E6B84F23B0B4A20060F7D8 /* Analytics.storyboard */,
 				65E6B85123B0B4AB0060F7D8 /* Setting.storyboard */,
@@ -158,6 +160,15 @@
 				65E6B84623ACC3C00060F7D8 /* SleepType.swift */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		65E6B85523B0BED90060F7D8 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				65E6B84B23B0B4830060F7D8 /* Record.storyboard */,
+				65E6B85623B0BF6B0060F7D8 /* RecordMainTableViewController.swift */,
+			);
+			name = Record;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 			files = (
 				65061E0B239E4D6F005CCAA7 /* SecondViewController.swift in Sources */,
 				65061E09239E4D6F005CCAA7 /* FirstViewController.swift in Sources */,
+				65E6B85723B0BF6B0060F7D8 /* RecordMainTableViewController.swift in Sources */,
 				65E6B84A23ACC62C0060F7D8 /* SleepDataManager.swift in Sources */,
 				65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */,
 				65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */,
