@@ -19,6 +19,8 @@
 		65061E2C239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E2B239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift */; };
 		65E4424A23B1FA2900B079DC /* RecordMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4424923B1FA2900B079DC /* RecordMainViewController.swift */; };
 		65E4424C23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4424B23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift */; };
+		65E4424F23B209EF00B079DC /* SleepTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4424D23B209EF00B079DC /* SleepTypeTableViewCell.swift */; };
+		65E4425023B209EF00B079DC /* SleepTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E4424E23B209EF00B079DC /* SleepTypeTableViewCell.xib */; };
 		65E6B84723ACC3C00060F7D8 /* SleepType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6B84623ACC3C00060F7D8 /* SleepType.swift */; };
 		65E6B84A23ACC62C0060F7D8 /* SleepDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E6B84923ACC62C0060F7D8 /* SleepDataManager.swift */; };
 		65E6B84C23B0B4830060F7D8 /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E6B84B23B0B4830060F7D8 /* Record.storyboard */; };
@@ -68,6 +70,8 @@
 		6596C11F0CCAE3939B8555CF /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		65E4424923B1FA2900B079DC /* RecordMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMainViewController.swift; sourceTree = "<group>"; };
 		65E4424B23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepRecordEditTableViewController.swift; sourceTree = "<group>"; };
+		65E4424D23B209EF00B079DC /* SleepTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTypeTableViewCell.swift; sourceTree = "<group>"; };
+		65E4424E23B209EF00B079DC /* SleepTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepTypeTableViewCell.xib; sourceTree = "<group>"; };
 		65E6B84623ACC3C00060F7D8 /* SleepType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepType.swift; sourceTree = "<group>"; };
 		65E6B84923ACC62C0060F7D8 /* SleepDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataManager.swift; sourceTree = "<group>"; };
 		65E6B84B23B0B4830060F7D8 /* Record.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Record.storyboard; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 				65E6B84B23B0B4830060F7D8 /* Record.storyboard */,
 				65E4424923B1FA2900B079DC /* RecordMainViewController.swift */,
 				65E4424B23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift */,
+				65E4424D23B209EF00B079DC /* SleepTypeTableViewCell.swift */,
+				65E4424E23B209EF00B079DC /* SleepTypeTableViewCell.xib */,
 			);
 			name = Record;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65061E16239E4D71005CCAA7 /* LaunchScreen.storyboard in Resources */,
+				65E4425023B209EF00B079DC /* SleepTypeTableViewCell.xib in Resources */,
 				65E6B85023B0B4A20060F7D8 /* Analytics.storyboard in Resources */,
 				65E6B85223B0B4AB0060F7D8 /* Setting.storyboard in Resources */,
 				65061E13239E4D71005CCAA7 /* Assets.xcassets in Resources */,
@@ -420,6 +427,7 @@
 				65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */,
 				65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */,
 				65061E07239E4D6F005CCAA7 /* SceneDelegate.swift in Sources */,
+				65E4424F23B209EF00B079DC /* SleepTypeTableViewCell.swift in Sources */,
 				65E4424A23B1FA2900B079DC /* RecordMainViewController.swift in Sources */,
 				65E6B84723ACC3C00060F7D8 /* SleepType.swift in Sources */,
 			);
