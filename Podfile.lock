@@ -1,0 +1,16 @@
+PODS:
+  - DatePickerCell (1.0.9)
+
+DEPENDENCIES:
+  - DatePickerCell
+
+SPEC REPOS:
+  trunk:
+    - DatePickerCell
+
+SPEC CHECKSUMS:
+  DatePickerCell: 021ea693283711cbea28b925537eac6a29c2e40b
+
+PODFILE CHECKSUM: eedcc9ad372ccc772be35272b7f2d125edd0ad23
+
+COCOAPODS: 1.8.4

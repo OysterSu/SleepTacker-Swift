@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F591473782EB9DB51747A2E /* libPods-SleepTracker-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB5973308B7C8FB8E726AFD /* libPods-SleepTracker-Swift.a */; };
+		53B29E38F48F14BC2AE6969A /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */; };
 		65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E04239E4D6F005CCAA7 /* AppDelegate.swift */; };
 		65061E07239E4D6F005CCAA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E06239E4D6F005CCAA7 /* SceneDelegate.swift */; };
 		65061E09239E4D6F005CCAA7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E08239E4D6F005CCAA7 /* FirstViewController.swift */; };
@@ -25,6 +27,7 @@
 		65E6B84E23B0B4900060F7D8 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E6B84D23B0B4900060F7D8 /* History.storyboard */; };
 		65E6B85023B0B4A20060F7D8 /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E6B84F23B0B4A20060F7D8 /* Analytics.storyboard */; };
 		65E6B85223B0B4AB0060F7D8 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E6B85123B0B4AB0060F7D8 /* Setting.storyboard */; };
+		C23F30B1C531F633397527FF /* libPods-SleepTracker-SwiftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E36D2C3C607DCB46240C0CB /* libPods-SleepTracker-SwiftTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C021F2785CD0A05094E3BE /* Pods-SleepTracker-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift.debug.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift/Pods-SleepTracker-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		196694CDE55A60FDE309AEFB /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E36D2C3C607DCB46240C0CB /* libPods-SleepTracker-SwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-SwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8DEDAF6AFB4A10E71DDCE8 /* Pods-SleepTracker-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift.release.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift/Pods-SleepTracker-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65061E01239E4D6F005CCAA7 /* SleepTracker-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SleepTracker-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65061E04239E4D6F005CCAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65061E06239E4D6F005CCAA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 		65061E27239E4D71005CCAA7 /* SleepTracker-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SleepTracker-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65061E2B239E4D71005CCAA7 /* SleepTracker_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTracker_SwiftUITests.swift; sourceTree = "<group>"; };
 		65061E2D239E4D71005CCAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6596C11F0CCAE3939B8555CF /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		65E4424923B1FA2900B079DC /* RecordMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMainViewController.swift; sourceTree = "<group>"; };
 		65E4424B23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepRecordEditTableViewController.swift; sourceTree = "<group>"; };
 		65E6B84623ACC3C00060F7D8 /* SleepType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepType.swift; sourceTree = "<group>"; };
@@ -69,6 +78,9 @@
 		65E6B84D23B0B4900060F7D8 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		65E6B84F23B0B4A20060F7D8 /* Analytics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
 		65E6B85123B0B4AB0060F7D8 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		78057B6773155D02E17C6A6C /* Pods-SleepTracker-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-SwiftTests.release.xcconfig"; path = "Target Support Files/Pods-SleepTracker-SwiftTests/Pods-SleepTracker-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CB5973308B7C8FB8E726AFD /* libPods-SleepTracker-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F833DFB2A612D28BCF0A6EB7 /* Pods-SleepTracker-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-SwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-SleepTracker-SwiftTests/Pods-SleepTracker-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F591473782EB9DB51747A2E /* libPods-SleepTracker-Swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23F30B1C531F633397527FF /* libPods-SleepTracker-SwiftTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B29E38F48F14BC2AE6969A /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C30DF51BE69A4988D52B3E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01C021F2785CD0A05094E3BE /* Pods-SleepTracker-Swift.debug.xcconfig */,
+				3C8DEDAF6AFB4A10E71DDCE8 /* Pods-SleepTracker-Swift.release.xcconfig */,
+				6596C11F0CCAE3939B8555CF /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig */,
+				196694CDE55A60FDE309AEFB /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig */,
+				F833DFB2A612D28BCF0A6EB7 /* Pods-SleepTracker-SwiftTests.debug.xcconfig */,
+				78057B6773155D02E17C6A6C /* Pods-SleepTracker-SwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		45D7510E105AE7B7AE2DCB7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CB5973308B7C8FB8E726AFD /* libPods-SleepTracker-Swift.a */,
+				46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */,
+				1E36D2C3C607DCB46240C0CB /* libPods-SleepTracker-SwiftTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		65061DF8239E4D6F005CCAA7 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +141,8 @@
 				65061E1F239E4D71005CCAA7 /* SleepTracker-SwiftTests */,
 				65061E2A239E4D71005CCAA7 /* SleepTracker-SwiftUITests */,
 				65061E02239E4D6F005CCAA7 /* Products */,
+				3C30DF51BE69A4988D52B3E3 /* Pods */,
+				45D7510E105AE7B7AE2DCB7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65061E30239E4D71005CCAA7 /* Build configuration list for PBXNativeTarget "SleepTracker-Swift" */;
 			buildPhases = (
+				A9419F3F6A187A29A24B3EDA /* [CP] Check Pods Manifest.lock */,
 				65061DFD239E4D6F005CCAA7 /* Sources */,
 				65061DFE239E4D6F005CCAA7 /* Frameworks */,
 				65061DFF239E4D6F005CCAA7 /* Resources */,
@@ -198,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65061E33239E4D71005CCAA7 /* Build configuration list for PBXNativeTarget "SleepTracker-SwiftTests" */;
 			buildPhases = (
+				8C71A7775E2882AE94E52BCE /* [CP] Check Pods Manifest.lock */,
 				65061E18239E4D71005CCAA7 /* Sources */,
 				65061E19239E4D71005CCAA7 /* Frameworks */,
 				65061E1A239E4D71005CCAA7 /* Resources */,
@@ -216,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65061E36239E4D71005CCAA7 /* Build configuration list for PBXNativeTarget "SleepTracker-SwiftUITests" */;
 			buildPhases = (
+				06FC50799BFCDBE19FD403DD /* [CP] Check Pods Manifest.lock */,
 				65061E23239E4D71005CCAA7 /* Sources */,
 				65061E24239E4D71005CCAA7 /* Frameworks */,
 				65061E25239E4D71005CCAA7 /* Resources */,
@@ -303,6 +346,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06FC50799BFCDBE19FD403DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C71A7775E2882AE94E52BCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SleepTracker-SwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9419F3F6A187A29A24B3EDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SleepTracker-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65061DFD239E4D6F005CCAA7 /* Sources */ = {
@@ -488,6 +600,7 @@
 		};
 		65061E31239E4D71005CCAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C021F2785CD0A05094E3BE /* Pods-SleepTracker-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +618,7 @@
 		};
 		65061E32239E4D71005CCAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8DEDAF6AFB4A10E71DDCE8 /* Pods-SleepTracker-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +636,7 @@
 		};
 		65061E34239E4D71005CCAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F833DFB2A612D28BCF0A6EB7 /* Pods-SleepTracker-SwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +658,7 @@
 		};
 		65061E35239E4D71005CCAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78057B6773155D02E17C6A6C /* Pods-SleepTracker-SwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,8 +680,9 @@
 		};
 		65061E37239E4D71005CCAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6596C11F0CCAE3939B8555CF /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SleepTracker-SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,8 +700,9 @@
 		};
 		65061E38239E4D71005CCAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196694CDE55A60FDE309AEFB /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SleepTracker-SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
