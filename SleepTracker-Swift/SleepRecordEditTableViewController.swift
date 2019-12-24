@@ -1,14 +1,14 @@
 //
-//  RecordMainTableViewController.swift
+//  SleepRecordEditTableViewController.swift
 //  SleepTracker-Swift
 //
-//  Created by 蘇健豪 on 2019/12/23.
+//  Created by 蘇健豪 on 2019/12/24.
 //  Copyright © 2019 蘇健豪. All rights reserved.
 //
 
 import UIKit
 
-class RecordMainTableViewController: UITableViewController {
+class SleepRecordEditTableViewController: UITableViewController {
     
     let titleData = ["開始時間", "結束時間", "睡眠型態"]
     
