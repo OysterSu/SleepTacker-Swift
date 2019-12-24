@@ -11,8 +11,6 @@
 		53B29E38F48F14BC2AE6969A /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */; };
 		65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E04239E4D6F005CCAA7 /* AppDelegate.swift */; };
 		65061E07239E4D6F005CCAA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E06239E4D6F005CCAA7 /* SceneDelegate.swift */; };
-		65061E09239E4D6F005CCAA7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E08239E4D6F005CCAA7 /* FirstViewController.swift */; };
-		65061E0B239E4D6F005CCAA7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E0A239E4D6F005CCAA7 /* SecondViewController.swift */; };
 		65061E0E239E4D6F005CCAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65061E0C239E4D6F005CCAA7 /* Main.storyboard */; };
 		65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65061E0F239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld */; };
 		65061E13239E4D71005CCAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65061E12239E4D71005CCAA7 /* Assets.xcassets */; };
@@ -56,8 +54,6 @@
 		65061E01239E4D6F005CCAA7 /* SleepTracker-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SleepTracker-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65061E04239E4D6F005CCAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65061E06239E4D6F005CCAA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65061E08239E4D6F005CCAA7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		65061E0A239E4D6F005CCAA7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		65061E0D239E4D6F005CCAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65061E10239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SleepTracker_Swift.xcdatamodel; sourceTree = "<group>"; };
 		65061E12239E4D71005CCAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,8 +157,6 @@
 			children = (
 				65061E04239E4D6F005CCAA7 /* AppDelegate.swift */,
 				65061E06239E4D6F005CCAA7 /* SceneDelegate.swift */,
-				65061E08239E4D6F005CCAA7 /* FirstViewController.swift */,
-				65061E0A239E4D6F005CCAA7 /* SecondViewController.swift */,
 				65061E0C239E4D6F005CCAA7 /* Main.storyboard */,
 				65E6B85523B0BED90060F7D8 /* Record */,
 				65E6B84D23B0B4900060F7D8 /* History.storyboard */,
@@ -422,8 +416,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E4424C23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift in Sources */,
-				65061E0B239E4D6F005CCAA7 /* SecondViewController.swift in Sources */,
-				65061E09239E4D6F005CCAA7 /* FirstViewController.swift in Sources */,
 				65E6B84A23ACC62C0060F7D8 /* SleepDataManager.swift in Sources */,
 				65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */,
 				65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */,
