@@ -11,6 +11,7 @@
 		1D7DC40423B37EA600606922 /* HistoryMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC40223B37EA600606922 /* HistoryMainTableViewController.swift */; };
 		1D7DC40823B3833900606922 /* SleepData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC40623B3833800606922 /* SleepData+CoreDataClass.swift */; };
 		1D7DC40923B3833900606922 /* SleepData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC40723B3833800606922 /* SleepData+CoreDataProperties.swift */; };
+		1D7DC40C23B399D000606922 /* SleepStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC40B23B399D000606922 /* SleepStatus.swift */; };
 		1F591473782EB9DB51747A2E /* libPods-SleepTracker-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB5973308B7C8FB8E726AFD /* libPods-SleepTracker-Swift.a */; };
 		53B29E38F48F14BC2AE6969A /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */; };
 		65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E04239E4D6F005CCAA7 /* AppDelegate.swift */; };
@@ -58,6 +59,7 @@
 		1D7DC40223B37EA600606922 /* HistoryMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryMainTableViewController.swift; sourceTree = "<group>"; };
 		1D7DC40623B3833800606922 /* SleepData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SleepData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		1D7DC40723B3833800606922 /* SleepData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SleepData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		1D7DC40B23B399D000606922 /* SleepStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStatus.swift; sourceTree = "<group>"; };
 		1E36D2C3C607DCB46240C0CB /* libPods-SleepTracker-SwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-SwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8DEDAF6AFB4A10E71DDCE8 /* Pods-SleepTracker-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift.release.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift/Pods-SleepTracker-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 				65061E17239E4D71005CCAA7 /* Info.plist */,
 				65E6B84823ACC4AD0060F7D8 /* CoreData */,
 				1D0B1C8223B33F6000F91FF4 /* AlertFactory.swift */,
+				1D7DC40B23B399D000606922 /* SleepStatus.swift */,
 			);
 			path = "SleepTracker-Swift";
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				1D0B1C8323B33F6000F91FF4 /* AlertFactory.swift in Sources */,
 				65E6B84A23ACC62C0060F7D8 /* SleepDataManager.swift in Sources */,
 				65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */,
+				1D7DC40C23B399D000606922 /* SleepStatus.swift in Sources */,
 				65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */,
 				65061E07239E4D6F005CCAA7 /* SceneDelegate.swift in Sources */,
 				65E4424F23B209EF00B079DC /* SleepTypeTableViewCell.swift in Sources */,
