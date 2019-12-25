@@ -29,7 +29,7 @@ class SleepDataManager {
     }
     
     func fetch(entityName: String,
-               predicate: NSPredicate,
+               predicate: NSPredicate?,
                sortDescriptor: [NSSortDescriptor]? = nil,
                callback: @escaping (Result<[SleepData], Error>) -> Void) {
         
@@ -70,5 +70,10 @@ class SleepDataManager {
                 callback(.failure(error))
             }
         }
+    }
+    
+    func delete(object: NSManagedObject, callback: @escaping callbackClosure) {
+        self.moc.delete(object)
+        callback(Result{ try moc.save() })
     }
 }
