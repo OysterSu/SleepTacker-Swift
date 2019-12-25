@@ -18,10 +18,10 @@ class SleepDataManager {
         self.moc = moc
     }
 
-    func insert(entityName: String, attributeInfo: [String: Any], callback: @escaping callbackClosure) {
+    func insert(entityName: String, attribute: [String: Any], callback: @escaping callbackClosure) {
         let insertData = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.moc) as! SleepData
 
-        for (key, value) in attributeInfo {
+        for (key, value) in attribute {
             insertData.setValue(value, forKey: key)
         }
         
