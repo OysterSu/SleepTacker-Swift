@@ -29,11 +29,21 @@ class RecordMainViewController: UIViewController {
     }
     
     @IBAction func recordButtonClick(_ sender: UIButton) {
-        if isSleep {
+        if !isSleep {
+            let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let sleepManager = SleepDataManager(moc: moc)
+            sleepManager.insert(entityName: "SleepData", attribute: ["startTime" : Date()]) { (result) in
+                if case Result.failure(let error) = result {
+                    let alert = AlertFactory.errorAlert(error)
+                    self.present(alert, animated: true, completion: nil)
+                    
+                    self.isSleep.toggle()
+                }
+            }
+        } else {
             if let editViewController = self.storyboard?.instantiateViewController(identifier: "edit") {
                 self.present(editViewController, animated: true, completion: nil)
             }
-            
         }
         
         isSleep.toggle()
