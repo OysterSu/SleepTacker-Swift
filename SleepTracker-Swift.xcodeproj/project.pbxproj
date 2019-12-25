@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0B1C8323B33F6000F91FF4 /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0B1C8223B33F6000F91FF4 /* AlertFactory.swift */; };
 		1F591473782EB9DB51747A2E /* libPods-SleepTracker-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB5973308B7C8FB8E726AFD /* libPods-SleepTracker-Swift.a */; };
 		53B29E38F48F14BC2AE6969A /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */; };
 		65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E04239E4D6F005CCAA7 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		01C021F2785CD0A05094E3BE /* Pods-SleepTracker-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift.debug.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift/Pods-SleepTracker-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		196694CDE55A60FDE309AEFB /* Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests/Pods-SleepTracker-Swift-SleepTracker-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D0B1C8223B33F6000F91FF4 /* AlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
 		1E36D2C3C607DCB46240C0CB /* libPods-SleepTracker-SwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-SwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8DEDAF6AFB4A10E71DDCE8 /* Pods-SleepTracker-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift.release.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift/Pods-SleepTracker-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 				65061E14239E4D71005CCAA7 /* LaunchScreen.storyboard */,
 				65061E17239E4D71005CCAA7 /* Info.plist */,
 				65E6B84823ACC4AD0060F7D8 /* CoreData */,
+				1D0B1C8223B33F6000F91FF4 /* AlertFactory.swift */,
 			);
 			path = "SleepTracker-Swift";
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E4424C23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift in Sources */,
+				1D0B1C8323B33F6000F91FF4 /* AlertFactory.swift in Sources */,
 				65E6B84A23ACC62C0060F7D8 /* SleepDataManager.swift in Sources */,
 				65061E11239E4D6F005CCAA7 /* SleepTracker_Swift.xcdatamodeld in Sources */,
 				65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */,
