@@ -119,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7DC40A23B3975800606922 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				65E6B84D23B0B4900060F7D8 /* History.storyboard */,
+				1D7DC40223B37EA600606922 /* HistoryMainTableViewController.swift */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
 		3C30DF51BE69A4988D52B3E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,8 +180,7 @@
 				65061E06239E4D6F005CCAA7 /* SceneDelegate.swift */,
 				65061E0C239E4D6F005CCAA7 /* Main.storyboard */,
 				65E6B85523B0BED90060F7D8 /* Record */,
-				65E6B84D23B0B4900060F7D8 /* History.storyboard */,
-				1D7DC40223B37EA600606922 /* HistoryMainTableViewController.swift */,
+				1D7DC40A23B3975800606922 /* History */,
 				65E6B84F23B0B4A20060F7D8 /* Analytics.storyboard */,
 				65E6B85123B0B4AB0060F7D8 /* Setting.storyboard */,
 				65061E12239E4D71005CCAA7 /* Assets.xcassets */,
