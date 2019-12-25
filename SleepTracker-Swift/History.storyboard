@@ -9,13 +9,14 @@
         <!--Root View Controller-->
         <scene sceneID="nXt-Ni-T3n">
             <objects>
-                <tableViewController id="SSE-9N-Oz7" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQZ-2h-ipT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="SSE-9N-Oz7" customClass="HistoryMainTableViewController" customModule="SleepTracker_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kRf-sl-y1g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1GC-X5-ibb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1GC-X5-ibb">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1GC-X5-ibb" id="avQ-sa-5Xj">
@@ -31,7 +32,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="WJ2-M3-sA9"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQZ-2h-ipT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="142" y="124"/>
         </scene>
