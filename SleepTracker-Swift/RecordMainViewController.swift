@@ -11,6 +11,8 @@ import UIKit
 class RecordMainViewController: UIViewController, dismissControllerDelegate {
     
     private var sleepManager: SleepDataManager!
+    
+    private var sleepData: SleepData!
 
     @IBOutlet weak var recordButton: UIButton!
     
@@ -39,8 +41,8 @@ class RecordMainViewController: UIViewController, dismissControllerDelegate {
             switch result {
             case .success(let value):
                 if value.count == 1 {
-                    let sleepData = value.first
-                    if sleepData?.endTime == nil {
+                    self.sleepData = value.first
+                    if self.sleepData.endTime == nil {
                         SleepStatus.shared.isSleep = true
                     } else {
                         SleepStatus.shared.isSleep = false
@@ -67,6 +69,7 @@ class RecordMainViewController: UIViewController, dismissControllerDelegate {
             }
         } else {
             let editViewController = SleepRecordEditTableViewController(nibName: "SleepRecordEditTableViewController", bundle: nil)
+            editViewController.sleepData = sleepData
             editViewController.delegate = self
             let naviController = UINavigationController(rootViewController: editViewController)
 

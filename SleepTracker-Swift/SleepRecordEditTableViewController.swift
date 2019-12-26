@@ -15,15 +15,17 @@ protocol dismissControllerDelegate {
 
 class SleepRecordEditTableViewController: UITableViewController {
     
-    let sectionTitle = ["睡覺時間", "睡眠型態"]
-    let titleData = [["開始時間", "結束時間"], ["一般", "小睡"]]
+    private let sectionTitle = ["睡覺時間", "睡眠型態"]
+    private let titleData = [["開始時間", "結束時間"], ["一般", "小睡"]]
+    
+    var sleepData: SleepData!
     
     var delegate: dismissControllerDelegate?
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(SleepTimeTableViewCell.self, forCellReuseIdentifier: "sleepTime")
+        tableView.register(UINib(nibName: "SleepTimeTableViewCell", bundle: nil), forCellReuseIdentifier: "SleepTime")
         tableView.register(SleepTypeTableViewCell.self, forCellReuseIdentifier: "sleepType")
         
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save))
@@ -46,20 +48,30 @@ class SleepRecordEditTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell
         if indexPath.section == 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "sleepTime", for: indexPath) as! SleepTimeTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SleepTime", for: indexPath) as! SleepTimeTableViewCell
+            cell.textLabel?.text = NSLocalizedString(titleData[indexPath.section][indexPath.row], comment: "")
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeStyle = .medium
+            if indexPath.row == 0 {
+                let startTime = dateFormatter.string(from: sleepData.startTime)
+                cell.detailTextLabel?.text = startTime
+            } else {
+                let endTimeStr = dateFormatter.string(from: Date())
+                cell.detailTextLabel?.text = endTimeStr
+            }
+            
+            return cell
         } else {
-            cell = tableView.dequeueReusableCell(withIdentifier: "sleepType", for: indexPath) as! SleepTypeTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "sleepType", for: indexPath) as! SleepTypeTableViewCell
+            cell.textLabel?.text = NSLocalizedString(titleData[indexPath.section][indexPath.row], comment: "")
+            if indexPath.row == 0 {
+                cell.accessoryType = .checkmark
+            }
+            
+            return cell
         }
-        
-        cell.textLabel?.text = NSLocalizedString(titleData[indexPath.section][indexPath.row], comment: "")
-        
-        if indexPath.section == 1, indexPath.row == 0 {
-            cell.accessoryType = .checkmark
-        }
-        
-        return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
