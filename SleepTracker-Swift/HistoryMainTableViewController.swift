@@ -12,7 +12,7 @@ class HistoryMainTableViewController: UITableViewController {
     
     var sleepData: [SleepData] = []
     
-    var sleepManager: SleepDataManager?
+    var sleepManager: SleepDataManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class HistoryMainTableViewController: UITableViewController {
     
     func fetchData() {
         let sortSescriptor = NSSortDescriptor(key: "startTime", ascending: false)
-        sleepManager!.fetch(entityName: "SleepData", predicate: nil, sortDescriptor: [sortSescriptor]) { (result) in
+        sleepManager.fetch(entityName: "SleepData", predicate: nil, sortDescriptor: [sortSescriptor]) { (result) in
             switch result {
             case .success(let data):
                 self.sleepData = data
@@ -72,7 +72,7 @@ class HistoryMainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
-            sleepManager?.delete(object: sleepData[indexPath.row], callback: { (result) in
+            sleepManager.delete(object: sleepData[indexPath.row], callback: { (result) in
                 switch result {
                 case .success( _):
                     let alert = AlertFactory.successAlert(title: "刪除資料成功")
