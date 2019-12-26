@@ -50,14 +50,16 @@ class HistoryMainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .medium
+        let startDateFormatter = DateFormatter()
+        startDateFormatter.dateStyle = .medium
+        startDateFormatter.timeStyle = .medium
+        let startTime = startDateFormatter.string(from: sleepData[indexPath.row].startTime)
         
-        let startTime = dateFormatter.string(from: sleepData[indexPath.row].startTime)
+        let endTimeDateFormatter = DateFormatter()
+        endTimeDateFormatter.timeStyle = .medium
         var endTimeStr: String = ""
         if let endTime = sleepData[indexPath.row].endTime {
-            endTimeStr = dateFormatter.string(from: endTime)
+            endTimeStr = endTimeDateFormatter.string(from: endTime)
         }
         
         cell.textLabel?.text = startTime + " ~ " + endTimeStr
