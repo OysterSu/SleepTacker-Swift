@@ -9,6 +9,8 @@
 import UIKit
 
 class RecordMainViewController: UIViewController, dismissControllerDelegate {
+    
+    private var sleepManager: SleepDataManager!
 
     @IBOutlet weak var recordButton: UIButton!
     
@@ -25,13 +27,14 @@ class RecordMainViewController: UIViewController, dismissControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        sleepManager = SleepDataManager(moc: moc)
+        
         isSleep = SleepStatus.shared.isSleep
     }
     
     @IBAction func recordButtonClick(_ sender: UIButton) {
         if !isSleep {
-            let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-            let sleepManager = SleepDataManager(moc: moc)
             sleepManager.insert(entityName: "SleepData", attribute: ["startTime" : Date()]) { (result) in
                 if case Result.failure(let error) = result {
                     let alert = AlertFactory.errorAlert(error)
