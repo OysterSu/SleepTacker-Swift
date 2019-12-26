@@ -30,7 +30,29 @@ class RecordMainViewController: UIViewController, dismissControllerDelegate {
         let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         sleepManager = SleepDataManager(moc: moc)
         
-        isSleep = SleepStatus.shared.isSleep
+        decideSleepStatus()
+    }
+    
+    private func decideSleepStatus() {
+        let sortSescriptor = NSSortDescriptor(key: "startTime", ascending: false)
+        sleepManager.fetch(entityName: "SleepData", predicate: nil, sortDescriptors: [sortSescriptor], limit: 1) { (result) in
+            switch result {
+            case .success(let value):
+                if value.count == 1 {
+                    let sleepData = value.first
+                    if sleepData?.endTime == nil {
+                        SleepStatus.shared.isSleep = true
+                    } else {
+                        SleepStatus.shared.isSleep = false
+                    }
+                    
+                    self.isSleep = SleepStatus.shared.isSleep
+                }
+            case .failure(let error):
+                let alert = AlertFactory.errorAlert(error)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func recordButtonClick(_ sender: UIButton) {
