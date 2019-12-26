@@ -12,5 +12,7 @@ class SleepStatus {
     
     static let shared = SleepStatus()
     
+    var isSleep: Bool = false
+    
     private init() {}
 }

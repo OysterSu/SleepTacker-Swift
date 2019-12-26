@@ -8,11 +8,11 @@
 
 import UIKit
 
-class RecordMainViewController: UIViewController {
+class RecordMainViewController: UIViewController, dismissControllerDelegate {
 
     @IBOutlet weak var recordButton: UIButton!
     
-    private var isSleep: Bool = false {
+    private var isSleep: Bool! {
         didSet {
             if isSleep {
                 recordButton.setTitle("起床", for: .normal)
@@ -24,8 +24,8 @@ class RecordMainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        isSleep = SleepStatus.shared.isSleep
     }
     
     @IBAction func recordButtonClick(_ sender: UIButton) {
@@ -41,12 +41,18 @@ class RecordMainViewController: UIViewController {
                 }
             }
         } else {
-            if let editViewController = self.storyboard?.instantiateViewController(identifier: "edit") {
-                self.present(editViewController, animated: true, completion: nil)
-            }
+            let editViewController = SleepRecordEditTableViewController(nibName: "SleepRecordEditTableViewController", bundle: nil)
+            editViewController.delegate = self
+            let naviController = UINavigationController(rootViewController: editViewController)
+
+            self.present(naviController, animated: true, completion: nil)
         }
         
         isSleep.toggle()
+    }
+    
+    func dismissHandler() {
+        isSleep = SleepStatus.shared.isSleep
     }
     
 }

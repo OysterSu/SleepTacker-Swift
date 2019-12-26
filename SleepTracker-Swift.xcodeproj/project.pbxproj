@@ -12,6 +12,9 @@
 		1D7DC40823B3833900606922 /* SleepData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC40623B3833800606922 /* SleepData+CoreDataClass.swift */; };
 		1D7DC40923B3833900606922 /* SleepData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC40723B3833800606922 /* SleepData+CoreDataProperties.swift */; };
 		1D7DC40C23B399D000606922 /* SleepStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC40B23B399D000606922 /* SleepStatus.swift */; };
+		1D7DC40E23B3A15B00606922 /* SleepRecordEditTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7DC40D23B3A15B00606922 /* SleepRecordEditTableViewController.xib */; };
+		1D7DC41523B3A62000606922 /* SleepTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7DC41323B3A62000606922 /* SleepTimeTableViewCell.swift */; };
+		1D7DC41623B3A62000606922 /* SleepTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D7DC41423B3A62000606922 /* SleepTimeTableViewCell.xib */; };
 		1F591473782EB9DB51747A2E /* libPods-SleepTracker-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB5973308B7C8FB8E726AFD /* libPods-SleepTracker-Swift.a */; };
 		53B29E38F48F14BC2AE6969A /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */; };
 		65061E05239E4D6F005CCAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65061E04239E4D6F005CCAA7 /* AppDelegate.swift */; };
@@ -60,6 +63,9 @@
 		1D7DC40623B3833800606922 /* SleepData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SleepData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		1D7DC40723B3833800606922 /* SleepData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SleepData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		1D7DC40B23B399D000606922 /* SleepStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStatus.swift; sourceTree = "<group>"; };
+		1D7DC40D23B3A15B00606922 /* SleepRecordEditTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepRecordEditTableViewController.xib; sourceTree = "<group>"; };
+		1D7DC41323B3A62000606922 /* SleepTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeTableViewCell.swift; sourceTree = "<group>"; };
+		1D7DC41423B3A62000606922 /* SleepTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepTimeTableViewCell.xib; sourceTree = "<group>"; };
 		1E36D2C3C607DCB46240C0CB /* libPods-SleepTracker-SwiftTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-SwiftTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8DEDAF6AFB4A10E71DDCE8 /* Pods-SleepTracker-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepTracker-Swift.release.xcconfig"; path = "Target Support Files/Pods-SleepTracker-Swift/Pods-SleepTracker-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		46AA482BF6F103CCEF96B477 /* libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepTracker-Swift-SleepTracker-SwiftUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +237,9 @@
 				65E6B84B23B0B4830060F7D8 /* Record.storyboard */,
 				65E4424923B1FA2900B079DC /* RecordMainViewController.swift */,
 				65E4424B23B1FC1B00B079DC /* SleepRecordEditTableViewController.swift */,
+				1D7DC40D23B3A15B00606922 /* SleepRecordEditTableViewController.xib */,
+				1D7DC41323B3A62000606922 /* SleepTimeTableViewCell.swift */,
+				1D7DC41423B3A62000606922 /* SleepTimeTableViewCell.xib */,
 				65E4424D23B209EF00B079DC /* SleepTypeTableViewCell.swift */,
 				65E4424E23B209EF00B079DC /* SleepTypeTableViewCell.xib */,
 			);
@@ -346,7 +355,9 @@
 			files = (
 				65061E16239E4D71005CCAA7 /* LaunchScreen.storyboard in Resources */,
 				65E4425023B209EF00B079DC /* SleepTypeTableViewCell.xib in Resources */,
+				1D7DC40E23B3A15B00606922 /* SleepRecordEditTableViewController.xib in Resources */,
 				65E6B85023B0B4A20060F7D8 /* Analytics.storyboard in Resources */,
+				1D7DC41623B3A62000606922 /* SleepTimeTableViewCell.xib in Resources */,
 				65E6B85223B0B4AB0060F7D8 /* Setting.storyboard in Resources */,
 				65061E13239E4D71005CCAA7 /* Assets.xcassets in Resources */,
 				65061E0E239E4D6F005CCAA7 /* Main.storyboard in Resources */,
@@ -455,6 +466,7 @@
 				65E4424F23B209EF00B079DC /* SleepTypeTableViewCell.swift in Sources */,
 				1D7DC40823B3833900606922 /* SleepData+CoreDataClass.swift in Sources */,
 				1D7DC40423B37EA600606922 /* HistoryMainTableViewController.swift in Sources */,
+				1D7DC41523B3A62000606922 /* SleepTimeTableViewCell.swift in Sources */,
 				65E4424A23B1FA2900B079DC /* RecordMainViewController.swift in Sources */,
 				65E6B84723ACC3C00060F7D8 /* SleepType.swift in Sources */,
 				1D7DC40923B3833900606922 /* SleepData+CoreDataProperties.swift in Sources */,

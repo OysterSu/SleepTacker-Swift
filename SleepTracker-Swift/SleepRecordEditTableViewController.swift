@@ -9,16 +9,30 @@
 import UIKit
 import DatePickerCell
 
+protocol dismissControllerDelegate {
+    func dismissHandler()
+}
+
 class SleepRecordEditTableViewController: UITableViewController {
     
     let sectionTitle = ["睡覺時間", "睡眠型態"]
     let titleData = [["開始時間", "結束時間"], ["一般", "小睡"]]
+    
+    var delegate: dismissControllerDelegate?
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.register(SleepTimeTableViewCell.self, forCellReuseIdentifier: "sleepTime")
         tableView.register(SleepTypeTableViewCell.self, forCellReuseIdentifier: "sleepType")
         
+        let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save))
+        navigationItem.rightBarButtonItem = saveButton
+        
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
+        navigationItem.leftBarButtonItem = cancelButton
+        
+        self.title = NSLocalizedString("編輯資料", comment: "")
     }
 
     // MARK: - Table view data source
@@ -34,7 +48,7 @@ class SleepRecordEditTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell
         if indexPath.section == 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: "sleepTime", for: indexPath) as! SleepTimeTableViewCell
         } else {
             cell = tableView.dequeueReusableCell(withIdentifier: "sleepType", for: indexPath) as! SleepTypeTableViewCell
         }
@@ -72,11 +86,20 @@ class SleepRecordEditTableViewController: UITableViewController {
     
     // MARK: - Action
 
-    @IBAction func save(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    @objc func save() {
+        SleepStatus.shared.isSleep = false
+        
+        dismissController()
     }
     
-    @IBAction func cancel(_ sender: Any) {
+    @objc func cancel() {
+        SleepStatus.shared.isSleep = true
+        
+        dismissController()
+    }
+    
+    private func dismissController() {
+        self.delegate?.dismissHandler()
         dismiss(animated: true, completion: nil)
     }
     
