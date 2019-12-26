@@ -25,7 +25,7 @@ class HistoryMainTableViewController: UITableViewController {
     
     func fetchData() {
         let sortSescriptor = NSSortDescriptor(key: "startTime", ascending: false)
-        sleepManager.fetch(entityName: "SleepData", predicate: nil, sortDescriptor: [sortSescriptor]) { (result) in
+        sleepManager.fetch(entityName: "SleepData", predicate: nil, sortDescriptors: [sortSescriptor]) { (result) in
             switch result {
             case .success(let data):
                 self.sleepData = data

@@ -30,12 +30,16 @@ class SleepDataManager {
     
     func fetch(entityName: String,
                predicate: NSPredicate?,
-               sortDescriptor: [NSSortDescriptor]? = nil,
+               sortDescriptors: [NSSortDescriptor]? = nil,
+               limit: Int? = nil,
                callback: @escaping (Result<[SleepData], Error>) -> Void) {
         
         let request = NSFetchRequest<SleepData>(entityName: entityName)
         request.predicate = predicate
-        request.sortDescriptors = sortDescriptor
+        request.sortDescriptors = sortDescriptors
+        if let limit = limit {
+            request.fetchLimit = limit
+        }
         
         callback(Result { try self.moc.fetch(request) })
     }
