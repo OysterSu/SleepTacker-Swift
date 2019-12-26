@@ -99,14 +99,22 @@ class SleepRecordEditTableViewController: UITableViewController {
     // MARK: - Action
 
     @objc func save() {
-        SleepStatus.shared.isSleep = false
+        sleepData.endTime = Date()
+        let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let result = Result{ try moc.save() }
         
-        dismissController()
+        switch result {
+        case .success( _):
+            SleepStatus.shared.isSleep = false
+            dismissController()
+        case .failure(let error):
+            let alert = AlertFactory.errorAlert(error)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     @objc func cancel() {
         SleepStatus.shared.isSleep = true
-        
         dismissController()
     }
     
