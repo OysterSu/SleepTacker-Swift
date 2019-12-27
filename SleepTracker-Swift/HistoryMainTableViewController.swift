@@ -73,7 +73,6 @@ class HistoryMainTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            
             sleepManager.delete(object: sleepData[indexPath.row], callback: { (result) in
                 switch result {
                 case .success( _):
@@ -87,8 +86,6 @@ class HistoryMainTableViewController: UITableViewController {
                     self.present(alert, animated: true, completion: nil)
                 }
             })
-            
-            
         }
     }
     

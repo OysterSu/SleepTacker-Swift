@@ -60,7 +60,10 @@ class RecordMainViewController: UIViewController, dismissControllerDelegate {
     @IBAction func recordButtonClick(_ sender: UIButton) {
         if !isSleep {
             sleepManager.insert(entityName: "SleepData", attribute: ["startTime" : Date()]) { (result) in
-                if case Result.failure(let error) = result {
+                switch result {
+                case .success(let value):
+                    self.sleepData = value
+                case .failure(let error):
                     let alert = AlertFactory.errorAlert(error)
                     self.present(alert, animated: true, completion: nil)
                     

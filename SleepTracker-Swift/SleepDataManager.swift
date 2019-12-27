@@ -18,14 +18,20 @@ class SleepDataManager {
         self.moc = moc
     }
 
-    func insert(entityName: String, attribute: [String: Any], callback: @escaping callbackClosure) {
+    func insert(entityName: String, attribute: [String: Any], callback: @escaping (Result<SleepData, Error>) -> Void) {
         let insertData = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self.moc) as! SleepData
 
         for (key, value) in attribute {
             insertData.setValue(value, forKey: key)
         }
         
-        callback(Result{ try moc.save() })
+        let result = Result{ try moc.save() }
+        switch result {
+        case .success( _):
+            callback(.success(insertData))
+        case .failure(let error):
+            callback(.failure(error))
+        }
     }
     
     func fetch(entityName: String,
